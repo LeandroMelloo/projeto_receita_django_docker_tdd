@@ -27,6 +27,7 @@ docker-compose run --rm app sh -c "python manage.py startapp user"
 # Comando de criação da(s) model(s) com docker
 
 docker-compose run app sh -c "python manage.py makemigrations core"
+docker-compose run --rm app sh -c "python manage.py makemigrations"
 
 # Comando de criação do superusuario
 
